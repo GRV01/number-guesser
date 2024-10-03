@@ -28,7 +28,7 @@ $(document).ready(function() {
     function fetchQuote() {
         $.get('https://catfact.ninja/fact')
             .then(data => {
-                $('#message').text("Correct! " + data.fact);
+                $('#message').text("Correct! " + "CAT FACT:" + data.fact);
                 $('#attempts').hide();
             })
             .fail(() => {
